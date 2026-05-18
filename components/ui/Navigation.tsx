@@ -1,4 +1,4 @@
-import { navItems } from "../lib/constants";
+import { navItems } from "../../lib/constants";
 export default function Navigation() {
 
   return (
