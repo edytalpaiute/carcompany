@@ -1,5 +1,6 @@
+import Footer from "@/components/Footer";
 import "./globals.css";
-import Navigation from "@/components/ui/Navigation";
+import Navigation from "@/components/Navigation";
 
 export default function RootLayout({
   children,
@@ -8,11 +9,11 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body className="">
+      <body className="flex min-h-screen flex-col">
         <Navigation />
-        {children}
-        
-        </body>
+        <main className="flex-1">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
